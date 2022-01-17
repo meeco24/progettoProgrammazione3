@@ -1,0 +1,74 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #194769;
+    color: blanchedalmond;
+}
+
+header{
+    padding: 20px 20px 10px 20px;
+}
+
+#left{
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+}
+
+#right{
+    height: 100%;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+#info-competizione{
+    height: 40%;
+}
+
+#formazione-wrapper{
+    max-height: 100%;
+    overflow: scroll;
+}
+
+#bottone-mercato:hover{
+    width: 100%;
+    background-color: #f25e5e;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+#bottone-classifica:hover{
+    width: 100%;
+    background-color: #f25e5e;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.bottoni{
+    width: 100%;
+    background-color: #f2855e;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+table thead{
+    background-color: cornflowerblue;
+    color: blanchedalmond;
+}
+
+a, h3{
+    color: #f2855e;
+}
+
+a:hover{
+    color: blanchedalmond;
+}

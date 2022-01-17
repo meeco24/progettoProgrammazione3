@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Aggiungi Valutazione</title>
+
+    <style>
+        html, body{
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-color: #194769;
+            color: blanchedalmond;
+        }
+
+        header{
+            padding: 20px;
+        }
+
+        main{
+            display: grid;
+            align-items: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h2>Aggiungi Valutazione</h2>
+    </header>
+
+    <main class="d-flex justify-content-center p-5">
+        <div class="nuova-valutazione mt-3 form-group" style="width: 80%;">
+            <div class="input-group mb-3">
+                <button class="btn btn-primary">Calciatore</button>
+                <select class="form-control" name="calciatori" id="calciatori">
+                    <option>Selezionare un calciatore...</option>
+                    <!-- template calciatori -->
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <button class="btn btn-primary">Giornate</button>
+                <select class="form-control" name="giornate" id="giornate">
+                    <option>Selezionare una giornata...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+
+                </select>
+            </div>
+            <input class="form-control mb-3" placeholder="voto" id="voto" type="text">
+            <input class="form-control mb-3" placeholder="goal" id="goal" type="text">
+            <input class="form-control mb-3" placeholder="assist" id="assist" type="text">
+            <input class="form-control mb-3" placeholder="ammonizioni" id="ammonizioni" type="text">
+            <input class="form-control mb-3" placeholder="espulsioni" id="espulsioni" type="text">
+            <input class="form-control mb-3" placeholder="autogoal" id="autogoal" type="text">
+            <input class="form-control mb-3" placeholder="rigore_sbagliato" id="rigore_sbagliato" type="text">
+            <input class="form-control mb-3" placeholder="clean_sheet" id="clean_sheet" type="text">
+            <input class="form-control mb-3" placeholder="goal_subiti" id="goal_subiti" type="text">
+            <input class="form-control mb-3" placeholder="fantavoto" id="fantavoto" type="text">
+            <button id="aggiungi-valutazione" class="btn btn-success">Aggiungi valutazione</button>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js"></script>
+    <script src="/site/template.js"></script>
+    <script type="text/javascript" src="addValutazione.js"></script>
+
+</body>
+</html>

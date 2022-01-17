@@ -1,0 +1,62 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #194769;
+    color: blanchedalmond;
+}
+
+a{
+    color: #f2855e;
+}
+
+header{
+    padding: 20px 20px 10px 20px;
+}
+
+#lista-squadre{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.competizione{
+    width: 70%;
+    height: 60%;
+    margin: 10px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+    border-color: blanchedalmond;
+    color: black;
+    text-align: center;
+}
+
+.competizione .card-header{
+    background-color: black;
+}
+
+#modifica-profilo{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+#aggiorna-giocatore input{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aggiorna-giocatore button{
+    margin-left: 15%;
+}
+
+.errors{
+    margin-left: 15%;
+    margin-bottom: 10px;
+}

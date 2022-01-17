@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/28ce9bf6a8.js" crossorigin="anonymous"></script>
+    <title>Amminnistra Calciatori</title>
+
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #194769;
+            color: blanchedalmond;
+        }
+
+        header{
+            padding: 20px;
+        }
+
+        table{
+            text-align: center;
+        }
+
+        thead{
+            color: coral;
+        }
+
+        #aggiungi-calciatori{
+            width: 40%;
+            height: 100%;
+            padding: 20px;
+            display: grid;
+            align-items: center;
+
+        }
+
+        #lista-calciatori{
+            width: 60%;
+        }
+
+        #lista-calciatori div{
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        .bottoni{
+            width: 100%;
+            text-align: center;
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="d-flex flex-row justify-content-between">
+        <h2>Amministra Calciatori</h2>
+        <h2 id="home-link"><a href="http://127.0.0.1:5500/site/amministrazione/amministraHome.html"><i class="fas fa-home"></i></a></h2>
+    </header>
+
+    <main class="d-flex flex-row">
+
+        <div id="aggiungi-calciatori" class="form-group">
+            <input type="text" id="nominativo" name="nomintivo" class="form-control mb-3" placeholder="nominativo">
+            <input type="text" id="prezzo" name="prezzo" class="form-control mb-3" placeholder="prezzo">
+            <div class="input-group mb-3">
+                <button class="btn btn-outline-light btn-primary">Ruolo:</button>
+                <select name="ruolo" id="ruolo" class="form-control">
+                    <option>Seleziona un ruolo...</option>
+                    <option value="1">portiere</option>
+                    <option value="2">difensore</option>
+                    <option value="3">centrocampista</option>
+                    <option value="4">attaccante</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <button class="btn btn-outline-light btn-primary">Club:</button>
+                <select name="club" id="club" class="form-control">
+                    <option>Selezionare un club...</option>
+                    <!-- inserire club tramite template -->
+                </select>
+            </div>
+    
+            <button id="create-calciatore" class="btn btn-success">Aggiungi calciatore</button><br><br>
+        </div>
+
+        <div id="lista-calciatori">
+
+            <div id="portieri-mercato">
+                <button id="toggle-portieri" type="button" class="bottoni btn btn-block btn-warning">portieri</button>
+                <table id="tabella-portieri" class="table table-sm table-hover table-bordered table-warning">
+                    <thead class="table-secondary">
+                        <td>Calciatore</td>
+                        <td>Prezzo</td>
+                        <td>Club</td>
+                        <td>Elimina</td>
+                        <td>Aggiorna</td>
+                    </thead>
+                    <tbody id="calciatori-1">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="difensori-mercato">
+                <button id="toggle-difensori" type="button" class="bottoni btn btn-block btn-success">difensori</button>
+                <table id="tabella-difensori" class="table table-sm table-hover table-bordered table-success">
+                    <thead class="table-secondary">
+                        <td>Calciatore</td>
+                        <td>Prezzo</td>
+                        <td>Club</td>
+                        <td>Elimina</td>
+                        <td>Aggiorna</td>
+                    </thead>
+                    <tbody id="calciatori-2">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="centrocampisti-mercato">
+                <button id="toggle-centrocampisti" type="button" class="bottoni btn btn-block btn-primary">centrocampisti</button>
+                <table id="tabella-centrocampisti" class="table table-sm table-hover table-bordered table-primary">
+                    <thead class="table-secondary">
+                        <td>Calciatore</td>
+                        <td>Prezzo</td>
+                        <td>Club</td>
+                        <td>Elimina</td>
+                        <td>Aggiorna</td>
+                    </thead>
+                    <tbody id="calciatori-3">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="attaccanti-mercato">
+                <button id="toggle-attaccanti" type="button" class="bottoni btn btn-block btn-danger">attaccanti</button>
+                <table id="tabella-attaccanti" class="table table-sm table-hover table-bordered table-danger">
+                    <thead class="table-secondary">
+                        <td>Calciatore</td>
+                        <td>Prezzo</td>
+                        <td>Club</td>
+                        <td>Elimina</td>
+                        <td>Aggiorna</td>
+                    </thead>
+                    <tbody id="calciatori-4">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div> <!--lista-calciatori-->
+    
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js"></script>
+    <script src="/site/template.js"></script>
+    <script type="text/javascript" src="amministraCalciatore.js"></script>
+
+</body>
+</html>

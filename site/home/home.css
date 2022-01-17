@@ -1,0 +1,164 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #194769;
+    color: blanchedalmond;
+}
+
+a{
+    color: #f2855e;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#competizioni{
+    width: 100%;
+    height: 50vh;
+    padding: 20px;
+}
+
+#articoli{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+#schede-tecniche{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.info{
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+}
+
+.content{
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#competizioni-content .competizione{
+    width: 30%;
+    height: 60%;
+    margin: 10px;
+    margin-top: 5px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+    color: black;
+    text-align: center;
+}
+
+.articolo{
+    width: 100%;
+    height: 30%;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.titolo-articolo{
+    width: 70%;
+    margin-right: 30px;
+}
+
+.titolo-articolo a{
+    color: #f2855e;
+}
+
+.immagine{
+    width: 30%;
+    height: 95%;
+    background-color: rosybrown;
+}
+
+.schede{
+    width: 100%;
+    height: 50%;
+    margin: 10px auto;
+}
+
+.card{
+    height: 100px;
+}
+
+.card-header{
+    width: 100%;
+    border: white solid 1px;
+    background-color: #202124;
+}
+
+.Difensore{
+    width: 33%;
+    height: 90%;
+
+    margin: 15px;
+    padding: 0px;
+
+    border: white solid 1px;
+    border-radius: 5px;
+
+    /* background-color: #63c623; */
+    background-color: #198754;
+
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Centrocampista{
+    width: 33%;
+    height: 90%;
+
+    margin: 15px;
+    padding: 0px;
+
+    border: white solid 1px;
+    border-radius: 5px;
+
+    /* background-color: #63c623; */
+    background-color: #0d6efd;
+
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Attaccante{
+    width: 33%;
+    height: 90%;
+
+    margin: 15px;
+    padding: 0px;
+
+    border: white solid 1px;
+    border-radius: 5px;
+
+    /* background-color: #63c623; */
+    background-color:#dc3545;
+
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+#logout{
+    position: absolute;
+    right: 40px;
+}
+
+#profilo{
+    position: absolute;
+    right: 100px;
+}
+

@@ -1,0 +1,31 @@
+        div .errors{
+            color: #ffa6a3;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+
+            background-color: #194769;
+            color: blanchedalmond;
+
+        }
+
+        .wrapper {
+            margin-top: 14%;
+            margin-bottom: 14%;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .registration-link {
+            margin-left: 30%;
+            color: blanchedalmond;
+        }
+
+        .button-personal {
+            background-color: #f2855e;
+        }

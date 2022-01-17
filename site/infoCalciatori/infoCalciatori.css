@@ -1,0 +1,75 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #194769;
+    color: blanchedalmond;
+}
+
+header{
+    height: 30vh;
+}
+
+#search-box{
+    height: 100%;
+    width: 30%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#card-list{
+    padding: 20px;
+    height: 70vh;
+    width: 70%;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.Portiere{
+    background-color: #ffc107;
+}
+
+.Difensore{
+    /* background-color: #63c623; */
+    background-color: #198754;
+}
+
+.Centrocampista{
+    /* background-color: #63c623; */
+    background-color: #0d6efd;
+}
+
+.Attaccante{
+    /* background-color: #63c623; */
+    background-color:#dc3545;
+}
+
+.scheda{
+    height: 100%;
+    width: 45%;
+    background-color: #fff;
+    border: white solid 1px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.scheda-header{
+    height: 20%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5%;
+}
+
+.scheda-body{
+    height: 80%;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5%;
+}

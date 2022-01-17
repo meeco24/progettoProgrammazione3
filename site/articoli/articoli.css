@@ -1,0 +1,44 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #194769;
+    color: blanchedalmond;
+}
+
+header{
+    padding: 20px 20px 10px 20px;
+    background-color: blanchedalmond;
+}
+
+header a{
+    color: chocolate;
+    margin-right: 10px;
+}
+
+#lista-articoli{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+.container-articolo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.tags{
+    margin-left: 5px;
+    border: 1px solid blanchedalmond;
+    border-radius: 7%;
+    padding: 5px;
+}
+
+.contenuto{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

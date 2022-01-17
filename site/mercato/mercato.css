@@ -1,0 +1,62 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #194769;
+
+}
+
+thead {
+    color: #f2855e;
+}
+
+td{
+    text-align: center;
+    line-height: 40px;
+}
+
+header{
+    padding: 20px 20px 10px 20px;
+}
+
+#lista-calciatori {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+#lista-acquisti {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+
+#button-wrapper button {
+    margin: 10px;
+}
+
+#budget-display{
+    color: blanchedalmond;
+}
+
+a{
+    color: #f2855e;
+}
+
+.bottoni {
+    width: 100%;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.acquista {
+    width: 100%;
+    text-align: center;
+}
+
+.vendi {
+    width: 100%;
+    text-align: center;
+}
