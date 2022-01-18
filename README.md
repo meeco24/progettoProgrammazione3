@@ -17,5 +17,4 @@ Account giocatore:
 - email -> giovanna22@gmail.com -> giovanna
 
 Account amministratore:
-- username -> Domenico password -> 12345 
-# FantaRoyale
+- username -> Domenico password -> 12345
