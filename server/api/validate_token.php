@@ -1,7 +1,6 @@
 <?php
 
-    $baseProjectURL = '/Users/Intel/Desktop/FantaRoyale/';
-
+    require_once ('../../../documentRoot.php');
     require_once $baseProjectURL.'server/config/core.php';
     require_once $baseProjectURL.'libs/php-jwt-master/src/BeforeValidException.php';
     require_once $baseProjectURL.'libs/php-jwt-master/src/ExpiredException.php';

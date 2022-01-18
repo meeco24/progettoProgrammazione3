@@ -1,6 +1,6 @@
 <?php
-
-require_once "/Users/Intel/Desktop/FantaRoyale/server/models/Squadra.php";
+require_once ('../../../documentRoot.php');
+require_once $baseProjectURL."server/models/Squadra.php";
 
 class Competizione extends DatabaseManager{
 

@@ -1,7 +1,8 @@
 <?php
 
-require_once "/Users/Intel/Desktop/FantaRoyale/server/models/Tipologia.php";
-require_once "/Users/Intel/Desktop/FantaRoyale/server/models/Amministratore.php";
+require_once ('../../../documentRoot.php');
+require_once $baseProjectURL."server/models/Tipologia.php";
+require_once $baseProjectURL."server/models/Amministratore.php";
 
 class Articolo extends DatabaseManager{
 

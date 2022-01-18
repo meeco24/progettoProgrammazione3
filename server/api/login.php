@@ -5,8 +5,7 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-$baseProjectURL = '/Users/Intel/Desktop/FantaRoyale/';
-
+require_once ('../../documentRoot.php');
 require_once $baseProjectURL.'server/config/core.php';
 require_once $baseProjectURL.'libs/php-jwt-master/src/BeforeValidException.php';
 require_once $baseProjectURL.'libs/php-jwt-master/src/ExpiredException.php';
