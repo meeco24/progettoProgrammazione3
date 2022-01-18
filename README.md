@@ -10,7 +10,7 @@ Questa repository contiene i file che costituiscono l'applicazione suddivisi in 
 - images: contenente varie immagini utilizzate per lo styling dell'app
 - docs: contente il dump del database e una documentazione più approfondita sul prcesso di sviluppo dell'app
 
-Inoltre per far funzionare il server in locale è necessario sostituire la stringa che è assegnata alla variabile "$baseProjectURL" nel file "documentRoot.php", con la path della documentRoot di Apache.
+Inoltre per far funzionare il server in locale è necessario sostituire la stringa che è assegnata alla variabile "$baseProjectURL" nel file "documentRoot.php", con la path della documentRoot di Apache (che deve coincidere con la path della directory del progetto).
 
 ## Dati per utilizzare l'app
 Account giocatore: 
